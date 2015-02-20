@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
+    <link rel='stylesheet' href='./css/font-awesome.min.css'/><link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/blocs.js"></script>
+    <title>index - </title>
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- Navigation Bloc -->
+<div class="bloc bgc-2 bg-background d-bloc b-parallax" id="nav-bloc">
+	<div class="container bloc-sm">
+		<nav class="navbar row">
+			<div class="navbar-header">
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse navbar-1 collapse in">
+				<ul class="site-navigation nav">
+					<li>
+						<a id="pl-undefined" class="ltc-3" onclick="scrollToTarget('1')" href="#">Me</a>
+					</li>
+					<li>
+						<a class="ltc-3" onclick="scrollToTarget('#portfolio')" id="pl-undefined" href="#">Portfolio</a>
+					</li>
+					<li>
+						<a class="ltc-3" onclick="scrollToTarget('#contact')" id="pl-undefined" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+<!-- Navigation Bloc END -->
+
+<!-- bloc-1 -->
+<div class="bloc  bg-background d-bloc b-parallax " id="bloc-1">
+	<div class="container bloc-lg">
+		<div class="col-sm-2 col-md-offset-5">
+			<img src="https://s3-ap-southeast-2.amazonaws.com/joelhampton.website/Joel+BW.jpeg" class="img-responsive img-circle" alt='' />
+		</div>
+		<div class="col-sm-12 col-md-8 col-md-offset-2">
+			<h3 class="text-center  ">
+				<strong>Joel Hampton</strong>
+			</h3>
+			<p class="text-center ">
+			</p>
+		</div>
+	</div>
+</div>
+<!-- bloc-1 END -->
+
+<!-- bloc-2 -->
+<div class="bloc  bg-background d-bloc b-parallax" id="bloc-2">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="text-center">
+					<a onclick="scrollToTarget('#portfolio')" href="#"><span class="fa fa-arrow-circle-down icon-lg icon-4"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-2 END -->
+
+<!-- portfolio -->
+<div class="bloc l-bloc " id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="text-center  mg-sm">
+					<strong>Portfolio</strong>
+				</h2>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- portfolio END -->
+
+<!-- portfolio-list -->
+<div class="bloc b-parallax   d-bloc" id="portfolio-list">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://github.com/contact411/DroneMap" target="_blank"><img src="https://s3-ap-southeast-2.amazonaws.com/joelhampton.website/dronemap_screenshot.png" class="img-responsive" alt='' /></a>
+				<h3 class="text-center   mg-md">
+					<br /><strong>Drone Map</strong>
+				</h3>
+				<p class="">
+					A web application for the Parrot Rolling Spider Drone allows users to enter commands and create flight patterns for hands free controlling.<br /><br />Technologies used: Node.js, jQuery, Bluetooth LE, socket.io and rolling-spider npm
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<a href="http://listr.ninja/" target="_blank"><img src="https://s3-ap-southeast-2.amazonaws.com/joelhampton.website/Listr_screenshot.png" class="img-responsive" alt='' /></a>
+				<h3 class="mg-md text-center  ">
+					<br /><strong>Listr</strong>
+				</h3>
+				<p class="">
+					Listr.ninja allows buyers and sellers to interact through a online classifieds system. The mission was to build a simple, clean and user friendly application.<br /><br />Technologies used: Ruby on Rails, Paperclip, Devise, SearchKick, Heroku and Amazon S3
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<a href="http://yaps.co/" target="_blank"><img src="https://s3-ap-southeast-2.amazonaws.com/joelhampton.website/yaps_screenshot.png" class="img-responsive" alt='' /></a>
+				<h3 class="mg-md text-center  ">
+					<br /><strong>Yaps</strong>
+				</h3>
+				<p class="">
+					A webchat client built with a goal of bringing Redditors together for realtime conversations scoped to their favorite subreddits.<br /><br />Technologies used: Ruby on Rails, Oauth, jQuery,<br />Node.js, socket.io, reddit API, Heroku and Github
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- portfolio-list END -->
+
+<!-- Footer - bloc-5 -->
+<div class="bloc  bg-background d-bloc b-parallax" id="bloc-5">
+	<div class="container bloc-md">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="text-center">
+					<a onclick="scrollToTarget('#contact')" href="#"><span class="fa fa-arrow-circle-down icon-lg icon-3"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer - bloc-5 END -->
+
+<!-- Footer - contact -->
+<div class="bloc  bg-background d-bloc b-parallax" id="contact">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="mg-md text-center  ">
+					<strong>Contact me:</strong>
+				</h2>
+			</div>
+		</div>
+		<div class="row voffset">
+			<div class="col-sm-2">
+				<span class="empty-column"></span>
+			</div>
+			<div class="col-sm-2">
+				<div class="text-center">
+					<a href="http://au.linkedin.com/in/joelhampton" target="_blank"><span class="fa fa-linkedin-square icon-xl icon-4"></span></a>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="text-center">
+					<a href="https://twitter.com/contact411" target="_blank"><span class="fa fa-twitter-square icon-xl icon-4"></span></a>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="text-center">
+					<a href="https://github.com/contact411" target="_blank"><span class="fa fa-github-square icon-xl icon-4"></span></a>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<div class="text-center">
+					<a href="http://codenoobs.tumblr.com/" target="_blank"><span class="fa fa-tumblr-square icon-xl icon-4"></span></a>
+				</div>
+			</div>
+			<div class="col-sm-2">
+				<span class="empty-column"></span>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer - contact END -->
+</div>
+<!-- Main container END -->
+
+</body>
+    
+<!-- Google Analytics -->
+
+<!-- Google Analytics END -->
+
+</html>
